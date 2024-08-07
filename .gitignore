@@ -1,1 +1,5 @@
 /admin/server/node_modules
+/client/node_modules
+/client/.next
+/client/next-env.d.ts
+

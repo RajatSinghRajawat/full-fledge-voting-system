@@ -1,4 +1,4 @@
-const  {z}  = require('zod');
+const { z } = require('zod');
 const { Admin } = require("../models/admin.model");
 
 const signInSchema = z.object({
@@ -20,8 +20,8 @@ const signIn = async (req, res) => {
         if (!response) {
             return res.status(404).json({ status: "false", error: "Admin not found" });
         }
-        
-        return res.status(200).json({ status: "true", message:"Login Successfull" });
+
+        return res.status(200).json({ status: "true", message: "Login Successfull" });
     } catch (error) {
         return res.status(500).json({ status: "false", error: message });
     }
@@ -29,6 +29,12 @@ const signIn = async (req, res) => {
 
 
 // Add participant : name,email,city,age,state,popularity
+
+
+
+
+
+
 
 module.exports = {
     signIn
